@@ -2,22 +2,19 @@ body
 {
 	/*background: url(images/background.jpg);*/
 	/*background: url(images/background.png);*/
-
-background-image: linear-gradient(bottom, rgb(15,15,15) 13%, rgb(10,10,10) 57%, rgb(0,0,0) 79%);
-background-image: -o-linear-gradient(bottom, rgb(15,15,15) 13%, rgb(10,10,10) 57%, rgb(0,0,0) 79%);
-background-image: -moz-linear-gradient(bottom, rgb(15,15,15) 13%, rgb(10,10,10) 57%, rgb(0,0,0) 79%);
-background-image: -webkit-linear-gradient(bottom, rgb(15,15,15) 13%, rgb(10,10,10) 57%, rgb(0,0,0) 79%);
-background-image: -ms-linear-gradient(bottom, rgb(15,15,15) 13%, rgb(10,10,10) 57%, rgb(0,0,0) 79%);
+background-image: linear-gradient(bottom, rgb(20,20,20) 0%, rgb(5,5,5) 0%);
+background-image: -o-linear-gradient(bottom, rgb(20,20,20) 0%, rgb(5,5,5) 0%);
+background-image: -moz-linear-gradient(bottom, rgb(20,20,20) 0%, rgb(5,5,5) 0%);
+background-image: -webkit-linear-gradient(bottom, rgb(20,20,20) 0%, rgb(5,5,5) 0%);
+background-image: -ms-linear-gradient(bottom, rgb(20,20,20) 0%, rgb(5,5,5) 0%);
 
 background-image: -webkit-gradient(
 	linear,
 	left bottom,
 	left top,
-	color-stop(0.13, rgb(15,15,15)),
-	color-stop(0.57, rgb(10,10,10)),
-	color-stop(0.79, rgb(0,0,0))
+	color-stop(0, rgb(20,20,20)),
+	color-stop(0, rgb(5,5,5))
 );
-
 
 
 	
