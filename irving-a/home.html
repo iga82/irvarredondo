@@ -35,8 +35,8 @@
                 <div class = "ribbon"></div>
 			    <div id="slider" class="nivoSlider">
                     <img src= "/imagesForSlider/picture1.png" alt="" />
-                    <img src= "/imagesForSlider/picture2.png" alt="" />
-                    <img src= "/imagesForSlider/picture3.png" alt="" />
+                    <img src= "/imagesForSlider/picture2.png" alt="" title="My Family"/>
+                    <img src= "/imagesForSlider/picture3.png" alt="" title="My Girlfriend and I"/>
                     <img src= "/imagesForSlider/picture4.png" alt="" />
                     <img src= "/imagesForSlider/picture5.png" alt="" />
                     <img src= "/imagesForSlider/picture6.png" alt="" />
@@ -45,13 +45,15 @@
 		</div>
 
 		<script type="text/javascript">
-			$(window).load(function() {
-			    $('#slider').nivoSlider({
+			jQuery(function() {
+			    jQuery('#slider').nivoSlider({
+	    	        effect:"fade",
 			        randomStart: false, // Start on a random slide
 			        directionNav: true, // Next & Prev navigation
 			        directionNavHide: true, // Only show on hover
 			        controlNav: false, // 1,2,3... navigation
 			        controlNavThumbs: false, // Use thumbnails for Control Nav
+			        pauseTime: 5000, // How long each slide will show
 			    });
 			});
 		</script>
