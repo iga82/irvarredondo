@@ -23,6 +23,10 @@ class MainHandler(webapp2.RequestHandler):
     def get(self):
         self.response.out.write(template.render('home.html', {}))
 
+class About(webapp2.RequestHandler):
+    def get(self):
+        self.response.out.write(template.render('about.html', {}))
+
 class Contact(webapp2.RequestHandler):
     def get(self):
         self.response.out.write(template.render('contact.html', {}))
@@ -31,7 +35,7 @@ class Portfolio(webapp2.RequestHandler):
     def get(self):
         self.response.out.write(template.render('portfolio.html', {}))
 
-app = webapp2.WSGIApplication([('/', MainHandler), ('/contact', Contact), ('/portfolio', Portfolio)],
+app = webapp2.WSGIApplication([('/', MainHandler), ('/about', About), ('/contact', Contact), ('/portfolio', Portfolio)],
                               debug=True)
 
 if __name__ == "__main__":

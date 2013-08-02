@@ -2,93 +2,82 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 	<head>
-		<link rel = "stylesheet" type = "text/css" href = "/stylesheets/portfolio.css"/>
 		<TITLE>Irving Arredondo</TITLE>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<!-- Bootstrap -->
+    	<link href="css/bootstrap.css" rel="stylesheet" media="screen">
+
 	</head>
 
 	<body>
-
 		<!-- Navigation Bar -->
-		<div id = "navbar">
-			<ul>
-				<li><a href = 'http://www.irvarredondo.com/'><img src = "stylesheets/images/home.png"></a></li>
-				<li><a href = '/portfolio'><img src = "stylesheets/images/portfolio.png"></a></li>
-				<li>
-					<a href = 'https://dl.dropbox.com/u/94217607/Resume-IrvingArredondo.pdf' target="_blank">
-					<img src = "stylesheets/images/resume.png">
-					</a>
-				</li>
-				<li><a href = '/contact'><img src = "stylesheets/images/contact.png"></a></li>
+		<div class="navbar navbar-fixed-top">
+			<a class="navbar-brand" href='/'>Irving Arredondo</a>
+			<ul class="nav navbar-nav">
+				<li><a href = '/about'>About</a></li>
+				<li class="active"><a href = '/portfolio'>Portfolio</a></li>
+				<li><a href = '/contact'>Contact</a></li>
+				<li><a href = 'https://dl.dropbox.com/u/94217607/Resume-IrvingArredondo.pdf' target="_blank">Resume</a></li>
 			</ul>
 		</div>
 
-		<div id = "programList">
-			<ul id = "portText">
-				<li>
-					<a href = 'https://github.com/iga82/CaseWord' target = "_blank">
-						<span id = "title">
-							CaseWord 
-						</span>
-					</a>
-					<a href = 'http://www.caseword.com' target = "_blank">
-						<img style="vertical-align:middle" src="stylesheets/images/caseWord.png">
-					</a>
-					<br><br>
-					Created during the Spring 2013 3 Day Startup Event (an entrepreneurship education program designed for university students with an emphasis on learning by doing), it was 
-					an attempt at desiging a web application for lawyers, to elimnate the need
-					for manually citing their references. Our team won the "CODE NINJAS" award for our effort.
-					I learned javascript and Django over the span of the 3 days.  In addition I learned valuable marketing and buisness aspects of startup companies, such as market validation and scalability.  Our team consisted of 2 computer science majors (including me), 1 graduate economics major, 1 electrical engineering major, and 1 law student.  I was one of 40 people selected to participate from a large pool of applicants.
-				</li>
-				<li>
-					<a href = 'https://github.com/iga82/WorldCrisis' target = "_blank">
-						<span id = "title">
-							World Crisis Database
-						</span>
-					</a>
-					<!-- <a href = 'http://www.caseword.com' target = "_blank"> -->
-						<img style="vertical-align:middle" src="stylesheets/images/wcdb.png" width = "150">
-					<!-- </a> -->
-					<br><br>
-					A project for my Software Engineering class requiring us to learn how to use the
-					Google App Engine, the engine’s database, Django templates, and other tools to build a dynamic site that takes in information in an XML format and dynamically produces web pages. The site holds three different types of pages and interconnects them together based on relativity. My contribution to the project included helping out with all the backend work (site setup, handlers, import, export, database work, search function) as well as helping do the design work for the site. It is modeled after IMDb.
-					Python, XML, HTML, CSS, and using the Google App Engine and Django Templates were learned at the time the site was created.
-					This project occurred over the span of 5 weeks.
-				</li>
-				<li>
-					<a href = 'https://github.com/iga82/CharityHunt' target = "_blank">
-						<span id = "title">
-							CharityHunt
-						</span>
-					</a>
-					<br><br>
-					Created for the 2012 University of Texas at Austin EbayHackathon, it was an
-					effot to create a multiplatform mobile app that used geo-location and proximity to drop 
-					and pick up money using Paypal so that it could be donated to charity.
-					This application was developed over the span of 16 hours.
-					I learned how to use Appcelerator Titanium (a platform for developing mobile, tablet,
-					and desktop applications) over the night.
-					Worked in a team of 2.
-				</li>				
-				<li>
-					<a href = 'https://github.com/iga82/irvarredondo' target = "_blank">
-						<span id = "title">
-							irvarredondo.com
-						</span>
-					</a>
-					<br><br>
-					This website is my first solo attempt in trying to create a website. The purpose of 
-					this website is to showcase some of the past projects I have done and give a little 
-					more information about myself, than what is on my resume.
-					I am applying some of the knowledge that I have learned from my past endeavours, 
-					such as  using the Google Ape Engine to host my website, which I learned from my 
-					software engineering class. I also started learning how to use new tools such as 
-					Inkspace (free software, comparable to Adobe Illustrator) and GIMP 2 (free software, 
-					comparable to Adobe Photoshop).
-					This is a work in progress and is constantly being updated and imporved through 
-					the advice and opinion of others.
-				</li>			
-			</ul>
+		<div class="panel" style="width: 800px; margin-left: auto; margin-right: auto;">
+			<div class="panel-heading">
+				<a href = 'https://github.com/iga82/CaseWord' style="text-decoration: none;"target = "_blank"><h3 class="panel-title">Case Word</h3></a>
+			</div>
+			<a href = 'http://www.caseword.com' target = "_blank">
+				<img style="vertical-align:middle" src="stylesheets/images/caseWord.png">
+			</a><br><br>
+			Created during the Spring 2013 3 Day Startup Event (an entrepreneurship education program designed for 
+			university students with an emphasis on learning by doing), it was an attempt at desiging a web application 
+			for lawyers, to elimnate the need for manually citing their references. Our team won the "CODE NINJAS" award 
+			for our effort. I learned javascript and Django over the span of the 3 days.  In addition I learned valuable
+			marketing and buisness aspects of startup companies, such as market validation and scalability.  Our team 
+			consisted of 2 computer science majors (including me), 1 graduate economics major, 1 electrical engineering major, 
+			and 1 law student.  I was one of 40 people selected to participate from a large pool of applicants.
 		</div>
+
+		<div class="panel" style="width: 800px; margin-left: auto; margin-right: auto;">
+			<div class="panel-heading">
+				<a href = 'https://github.com/iga82/WorldCrisis' style="text-decoration: none;"target = "_blank"><h3 class="panel-title">World Crisis Database</h3></a>
+			</div>
+			<img style="vertical-align:middle" src="stylesheets/images/wcdb.png" width = "150"><br><br>
+			A project for my Software Engineering class requiring us to learn how to use the
+			Google App Engine, the engine’s database, Django templates, and other tools to build a dynamic site that takes in information in an XML format and dynamically produces web pages. The site holds three different types of pages and interconnects them together based on relativity. My contribution to the project included helping out with all the backend work (site setup, handlers, import, export, database work, search function) as well as helping do the design work for the site. It is modeled after IMDb.
+			Python, XML, HTML, CSS, and using the Google App Engine and Django Templates were learned at the time the site was created.
+			This project occurred over the span of 5 weeks.
+		</div>
+
+		<div class="panel" style="width: 800px; margin-left: auto; margin-right: auto;">
+			<div class="panel-heading">
+				<a href = 'https://github.com/iga82/CharityHunt' style="text-decoration: none;"target = "_blank"><h3 class="panel-title">Charity Hunt</h3></a>
+			</div>
+				Created for the 2012 University of Texas at Austin EbayHackathon, it was an
+				effot to create a multiplatform mobile app that used geo-location and proximity to drop 
+				and pick up money using Paypal so that it could be donated to charity.
+				This application was developed over the span of 16 hours.
+				I learned how to use Appcelerator Titanium (a platform for developing mobile, tablet,
+				and desktop applications) over the night.
+				Worked in a team of 2.
+		</div>
+
+		<div class="panel" style="width: 800px; margin-left: auto; margin-right: auto;">
+			<div class="panel-heading">
+				<a href = 'https://github.com/iga82/irvarredondo' style="text-decoration: none;"target = "_blank"><h3 class="panel-title">irvarredondo.com</h3></a>
+			</div>
+			<img src="stylesheets/images/irving.png" width="150px" style="vertical-align:middle">
+			<br><br>
+				This website is my first solo attempt in trying to create a website. The purpose of 
+				this website is to showcase some of the past projects I have done and give a little 
+				more information about myself than what is on my resume.
+				I am applying some of the knowledge that I have learned from my past endeavours, 
+				such as  using the Google Ape Engine to host my website, which I learned from my 
+				software engineering class. I also started learning how to use new tools such as 
+				Inkspace (free software, comparable to Adobe Illustrator) and GIMP 2 (free software, 
+				comparable to Adobe Photoshop).
+				This is a work in progress and is constantly being updated and imporved through 
+				the advice and opinion of others.
+		</div>				
 
 	</body>
 </html>

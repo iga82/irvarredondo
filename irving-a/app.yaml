@@ -8,6 +8,9 @@ handlers:
 - url: /
   script: main.app
 
+- url: /about
+  script: main.app
+
 - url: /contact
   script: main.app
 
@@ -17,8 +20,15 @@ handlers:
 - url: /stylesheets
   static_dir: stylesheets
 
+- url: /css
+  static_dir: css
+
+- url: /js
+  static_dir: js
+
 - url: /nivo-slider
   static_dir: nivo-slider
+
 - url: /imagesForSlider
   static_dir: imagesForSlider
 
