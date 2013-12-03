@@ -35,7 +35,11 @@ class Portfolio(webapp2.RequestHandler):
     def get(self):
         self.response.out.write(template.render('portfolio.html', {}))
 
-app = webapp2.WSGIApplication([('/', MainHandler), ('/about', About), ('/contact', Contact), ('/portfolio', Portfolio)],
+class WebAd(webapp2.RequestHandler):
+    def get(self):
+        self.response.out.write(template.render('webad.html', {}))
+
+app = webapp2.WSGIApplication([('/', MainHandler), ('/webad', WebAd), ('/about', About), ('/contact', Contact), ('/portfolio', Portfolio)],
                               debug=True)
 
 if __name__ == "__main__":

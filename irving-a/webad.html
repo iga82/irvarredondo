@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap 101 Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+    <!-- for the nivo-slider -->
+    <link rel="stylesheet" href="nivo-slider/themes/default/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="nivo-slider/nivo-slider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+    <!-- End nivo-slider -->
+  </head>
+  <body>
+    <div class="navbar">
+      <a class="navbar-brand" href='/webad'>Bee Game</a>
+    </div>
+
+    <!-- begin slider -->
+    <div id="wrapper" style="width: 640px; height: 360px; margin: 0 auto;">
+      <div class="slider-wrapper theme-default">
+        <div id="slider" class="nivoSlider">
+          <img src="imagesForSlider/bee_home.png" alt="" title="Home Screen" data-transition="slideInLeft"/>
+          <img src="imagesForSlider/bee_settings.png" alt="" title="Settings Screen" data-transition="slideInLeft"/>
+          <img src="imagesForSlider/bee_tap_start.png" alt="" title="Tap To Start Game" data-transition="slideInLeft"/>
+          <img src="imagesForSlider/bee_game_action.png" alt="" title="Gameplay on Hard Mode" data-transition="slideInLeft"/>
+          <img src="imagesForSlider/bee_high_scores.png" alt="" title="High Scores Screen" data-transition="slideInLeft"/>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="nivo-slider/demo/scripts/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="nivo-slider/jquery.nivo.slider.js"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider({
+          pauseTime: 5000 // pause time on every picture
+        });
+    });
+    </script>
+    <!-- end slider -->
+
+    <div style="padding-left: 40px; width: 800px; padding-top: 50px;">
+      <h3>Description</h3>
+      <p>
+        Bee game is an android application designed to target children and help get them to exercise. 
+        The goal in the game, is to try and catch as many honey droplets that you can. There are settings 
+        to change the difficulty and speed of the game. There are four difficulty modes. On "easy", the 
+        bee only moves horizontally across the screen and can only be one color, yellow. On "normal", the 
+        bee again only moves horizontally, but now honey droplets are different colors, so the player must 
+        turn the bee different colors, by either rotating their bodies to face different directions or tapping 
+        the bee (this is also a setting in the setting menu). In "hard" and "expert" modes, the bee is no longer
+        constrained to moving horizontally across the screen but can now move freely in an direction. The 
+        difference between the "hard" and "expert" modes is the speed. We try to accomplish getting the children 
+        to exercise by making use of the compass in the android application, although this setting can be 
+        disabled for people who have limited mobility or are feeling lazy.
+      </p>
+    </div>
+
+    <div style="padding-left: 40px; width: 800px; padding-top: 5px;">
+      <h3>Key Features</h3>
+      <p>
+        A few of our key features are:
+      </p>
+      <ul>
+        <li>Change color of bee by facing a different direction</li>
+        <li>Five different game modes</li>
+        <li>Two different speeds</li>
+        <li>Record of your high score, with ability to reset</li>
+        <li>Also support a tapping feature, for those with limited mobility</li>
+      </ul>
+    </div>
+
+  </body>
+</html>

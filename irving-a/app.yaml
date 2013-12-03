@@ -17,6 +17,9 @@ handlers:
 - url: /portfolio
   script: main.app
 
+- url: /webad
+  script: main.app
+
 - url: /stylesheets
   static_dir: stylesheets
 
